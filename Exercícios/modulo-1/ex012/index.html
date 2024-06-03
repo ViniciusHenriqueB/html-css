@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video width="500" poster="imagens/pombo_de_skate-500.jpg" controls>
+        <source src="midia/meu_video_720p.mp4" type="video/mp4">
+        <source src="midia/meu_video_720p.m4v" type="video/mp4">
+        <source src="midia/meu_video_720p.webm" type="video/webm">
+        <source src="midia/meu_video_720p.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hd8LjcoTt0o?si=SX8ZHUsK8Yq2FOQq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!--Selecionar o vídeo desejado do YouTube, clicar em "compartilhar" e depois em "incorporar. Depois, só colar o código como tá aí em cima e ser feliz"-->
+
+    <h1>Inserindo vídeos do Vimeo</h1> 
+    <!--Serviço capaz de utilizar vídeos "privados" (apenas com plano), por exemplo em um site de plano de estudos, em que você só tem disponibilidade à algumas aulas se você assina um plano que permita isso.-->
+    <iframe src="https://player.vimeo.com/video/939135094?h=0f78de8fa9" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <!--Podemos incorporar vídeos do Vímeo que seus criadores o determinarem como públicos. A qualidade é superior, além de não aparecer anúncios de outros vídeos, porém, é necessário uma internet maior do usuário, além do algoritmo ão ajudar tanto quanto um vídeo incorporado do YouTube-->
+</body>
+</html>
