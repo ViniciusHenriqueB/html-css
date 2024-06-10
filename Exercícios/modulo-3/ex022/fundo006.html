@@ -13,26 +13,36 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover; /*redimensiona a imagem para cobrir todo o fundo body, mesmo que haja eventuais cortes na imagem*/
+            /*A IMAGEM NÃO ACOMPANHA A ROLAGEM DA TELA PARA CONTEÚDOS MUITO GRANDES, PROBLEMA ESSE QUE SERÁ CORRIGIDO NA LINHA ABAIXO*/
+            background-attachment: fixed;
+
+            /* Shorthand - background:display:
+                color > image > position > repeat > attachment
+
+                No caso deste exercício ficaria:display: 
+                background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            */
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 20px;
+            text-align: justify;
         }
     </style>
 </head>
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex dolorum nam, vero dolores placeat! Dolorum, quisquam odio ab ipsum modi blanditiis praesentium alias sed nobis fugit doloremque vitae itaque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore voluptates, explicabo doloremque nam repellendus consequatur ea expedita aperiam. Aut sit nulla, esse mollitia maxime numquam fugiat iure architecto nam saepe? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab necessitatibus omnis autem tempore asperiores itaque? Ducimus sequi impedit sed sunt, libero cum, recusandae non maxime debitis iure minima delectus amet.
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex dolorum nam, vero dolores  placeat! Dolorum, quisquam odio ab ipsum modi blanditiis praesentium alias sed nobis fugit doloremque vitae itaque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore voluptates, explicabo doloremque nam repellendus consequatur ea expedita aperiam. Aut sit nulla, esse mollitia maxime numquam fugiat iure architecto nam saepe? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab necessitatibus omnis autem tempore asperiores itaque? Ducimus sequi impedit sed sunt, libero cum, recusandae non maxime debitis iure minima delectus amet.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quod et illum sint architecto, nam quas at fugit recusandae maxime obcaecati dolores aperiam provident repellat odio deleniti perspiciatis? Consectetur, modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam fugit minus atque praesentium, incidunt harum. Consequuntur pariatur ipsum optio nulla reiciendis necessitatibus ullam, earum ut eius consequatur provident voluptatem aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus illo aut vitae ad laborum perferendis magnam autem esse, praesentium nemo mollitia dolorem facilis eveniet numquam repudiandae animi eaque soluta beatae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet veritatis ut est, corporis repellendus, distinctio nihil sit ad sapiente, impedit blanditiis dicta quisquam libero ratione dolore labore quae aut alias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, dicta quos dolor accusantium aliquid esse mollitia? Accusantium repudiandae repellendus obcaecati aliquid porro? Harum blanditiis, fuga animi veritatis nemo magni voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus reprehenderit itaque harum ullam pariatur, dolorem expedita deleniti eligendi sint quam! Veritatis, iusto quas. Veritatis culpa perferendis quisquam consectetur nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus impedit molestias soluta atque eius itaque illo asperiores, rem quos blanditiis. Est reprehenderit ab dolorum eligendi quibusdam commodi corrupti architecto quam?
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex dolorum nam, vero dolores placeat! Dolorum, quisquam odio ab ipsum modi blanditiis praesentium alias sed nobis fugit doloremque vitae itaque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore voluptates, explicabo doloremque nam repellendus consequatur ea expedita aperiam. Aut sit nulla, esse mollitia maxime numquam fugiat iure architecto nam saepe? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab necessitatibus omnis autem tempore asperiores itaque? Ducimus sequi impedit sed sunt, libero cum, recusandae non maxime debitis iure minima delectus amet.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quod et illum sint architecto, nam quas at fugit recusandae maxime obcaecati dolores aperiam provident repellat odio deleniti perspiciatis? Consectetur, modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam fugit minus atque praesentium, incidunt harum. Consequuntur pariatur ipsum optio nulla reiciendis necessitatibus ullam, earum ut eius consequatur provident voluptatem aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus illo aut vitae ad laborum perferendis magnam autem esse, praesentium nemo mollitia dolorem facilis eveniet numquam repudiandae animi eaque soluta beatae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet veritatis ut est, corporis repellendus, distinctio nihil sit ad sapiente, impedit blanditiis dicta quisquam libero ratione dolore labore quae aut alias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, dicta quos dolor accusantium aliquid esse mollitia? Accusantium repudiandae repellendus obcaecati aliquid porro? Harum blanditiis, fuga animi veritatis nemo magni voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus reprehenderit itaque harum ullam pariatur, dolorem expedita deleniti eligendi sint quam! Veritatis, iusto quas. Veritatis culpa perferendis quisquam consectetur nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus impedit molestias soluta atque eius itaque illo asperiores, rem quos blanditiis. Est reprehenderit ab dolorum eligendi quibusdam commodi corrupti architecto quam?
-        </p> <!--A IMAGEM NÃO ACOMPANHA A ROLAGEM DA TELA PARA CONTEÚDOS MUITO GRANDES (VER ABRINDO O SITE), PROBLEMA ESSE QUE SERÁ CORRIGIDO NO PRÓXIMO VÍDEO-->
+        </p> <!--A IMAGEM NÃO ACOMPANHA A ROLAGEM DA TELA PARA CONTEÚDOS MUITO GRANDES, PROBLEMA ESSE QUE SERÁ CORRIGIDO NA LINHA ABAIXO-->
     </main>
 </body>
 </html>
