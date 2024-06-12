@@ -12,20 +12,84 @@
 :root {
     --fonte-h1: "Passion One", sans-serif;
     --fonte-poema: "Sriracha", cursive;
+    --fonte-restante: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte-restante);
 }
 
 header {
     background-color: black;
     color: white;
+    text-align: center;
+    font-family: var(--fonte-restante);
 }
 
 header > h1 {
     padding-top: 50px;
     font-family: var(--fonte-h1);
-    margin: auto;
+    font-size: 10vw;
+    font-variant: small-caps;
 }
 
 header > p {
     padding-bottom: 50px;
-    margin: auto;
+    font-size: 1em;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-size: 3.5vw;
+    line-height: 2em;
+    padding: 10vh 0px 10vh 30px;
+}
+
+section.normal {
+    background-color: white;
+    font-family: var(--fonte-poema);
+}
+
+section.normal p {
+    padding-bottom: 2em;
+}
+
+section.imagem {
+    background-color: rgb(54, 54, 54);
+}
+
+section.imagem p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.253);
+    color: white;
+    padding: 5px;
+}
+
+footer {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
